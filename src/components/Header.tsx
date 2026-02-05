@@ -49,6 +49,16 @@ export function Header() {
             >
               Categories
             </Link>
+            <Link
+              to="/generate"
+              className={`px-4 py-2 rounded-lg transition-colors ${
+                isActive('/generate') 
+                  ? 'bg-white/20 text-white' 
+                  : 'hover:bg-white/10'
+              }`}
+            >
+              Generate QR
+            </Link>
           </nav>
         </div>
       </div>

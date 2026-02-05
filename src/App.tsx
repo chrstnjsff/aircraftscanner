@@ -5,6 +5,7 @@ import { PartsPage } from './pages/PartsPage';
 import { PartPage } from './pages/PartPage';
 import { CategoriesPage } from './pages/CategoriesPage';
 import { CategoryPage } from './pages/CategoryPage';
+import { GeneratorPage } from './pages/GeneratorPage';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/part/:partId" element={<PartPage />} />
           <Route path="/categories" element={<CategoriesPage />} />
           <Route path="/category/:categoryId" element={<CategoryPage />} />
+          <Route path="/generate" element={<GeneratorPage />} />
         </Routes>
       </main>
       <footer className="bg-white border-t border-gray-200 py-6 mt-12">
