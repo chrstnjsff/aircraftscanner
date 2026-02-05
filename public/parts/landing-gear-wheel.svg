@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200" fill="none">
+  <defs>
+    <linearGradient id="wheelGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#64748b"/>
+      <stop offset="50%" style="stop-color:#94a3b8"/>
+      <stop offset="100%" style="stop-color:#64748b"/>
+    </linearGradient>
+    <radialGradient id="tireGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="70%" style="stop-color:#1e293b"/>
+      <stop offset="100%" style="stop-color:#0f172a"/>
+    </radialGradient>
+  </defs>
+  <rect width="400" height="200" fill="#f0f9ff"/>
+  <!-- Tire -->
+  <circle cx="200" cy="100" r="80" fill="url(#tireGrad)"/>
+  <!-- Tire tread pattern -->
+  <g stroke="#334155" stroke-width="2">
+    <circle cx="200" cy="100" r="75" fill="none"/>
+    <circle cx="200" cy="100" r="65" fill="none"/>
+    <!-- Tread grooves -->
+    <path d="M200 20 L200 35"/>
+    <path d="M255 30 L245 45"/>
+    <path d="M280 55 L265 65"/>
+    <path d="M280 100 L265 100"/>
+    <path d="M280 145 L265 135"/>
+    <path d="M255 170 L245 155"/>
+    <path d="M200 180 L200 165"/>
+    <path d="M145 170 L155 155"/>
+    <path d="M120 145 L135 135"/>
+    <path d="M120 100 L135 100"/>
+    <path d="M120 55 L135 65"/>
+    <path d="M145 30 L155 45"/>
+  </g>
+  <!-- Wheel rim -->
+  <circle cx="200" cy="100" r="55" fill="url(#wheelGrad)" stroke="#475569" stroke-width="2"/>
+  <!-- Hub -->
+  <circle cx="200" cy="100" r="30" fill="#64748b" stroke="#475569" stroke-width="2"/>
+  <!-- Bolt pattern -->
+  <g fill="#334155">
+    <circle cx="200" cy="75" r="4"/>
+    <circle cx="220" cy="82" r="4"/>
+    <circle cx="225" cy="100" r="4"/>
+    <circle cx="220" cy="118" r="4"/>
+    <circle cx="200" cy="125" r="4"/>
+    <circle cx="180" cy="118" r="4"/>
+    <circle cx="175" cy="100" r="4"/>
+    <circle cx="180" cy="82" r="4"/>
+  </g>
+  <!-- Center cap -->
+  <circle cx="200" cy="100" r="15" fill="#475569"/>
+  <!-- Thermal plug indicator -->
+  <circle cx="230" cy="70" r="5" fill="#ff6b35"/>
+  <text x="240" y="65" fill="#ff6b35" font-family="system-ui" font-size="8">Thermal Plug</text>
+  <!-- Split rim line -->
+  <circle cx="200" cy="100" r="45" fill="none" stroke="#94a3b8" stroke-width="1" stroke-dasharray="4,4"/>
+  <text x="200" y="195" text-anchor="middle" fill="#1e3a5f" font-family="system-ui" font-size="12" font-weight="600">Main Wheel Assembly</text>
+</svg>

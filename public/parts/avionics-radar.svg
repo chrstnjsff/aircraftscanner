@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200" fill="none">
+  <defs>
+    <linearGradient id="radarDish" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#94a3b8"/>
+      <stop offset="50%" style="stop-color:#e2e8f0"/>
+      <stop offset="100%" style="stop-color:#94a3b8"/>
+    </linearGradient>
+    <radialGradient id="radome" cx="30%" cy="30%" r="70%">
+      <stop offset="0%" style="stop-color:#f1f5f9"/>
+      <stop offset="100%" style="stop-color:#cbd5e1"/>
+    </radialGradient>
+  </defs>
+  <rect width="400" height="200" fill="#f0f9ff"/>
+  <!-- Radome (nose cone) outline -->
+  <path d="M20 100 Q20 40 100 30 L150 30 L150 170 L100 170 Q20 160 20 100" fill="url(#radome)" stroke="#94a3b8" stroke-width="2" stroke-dasharray="5,5"/>
+  <!-- Radar antenna (flat plate array) -->
+  <ellipse cx="200" cy="100" rx="80" ry="70" fill="url(#radarDish)" stroke="#64748b" stroke-width="2"/>
+  <!-- Antenna array pattern -->
+  <g stroke="#475569" stroke-width="0.5">
+    <line x1="130" y1="100" x2="270" y2="100"/>
+    <line x1="135" y1="80" x2="265" y2="80"/>
+    <line x1="140" y1="60" x2="260" y2="60"/>
+    <line x1="150" y1="45" x2="250" y2="45"/>
+    <line x1="135" y1="120" x2="265" y2="120"/>
+    <line x1="140" y1="140" x2="260" y2="140"/>
+    <line x1="150" y1="155" x2="250" y2="155"/>
+  </g>
+  <!-- Pedestal mount -->
+  <rect x="280" y="70" width="40" height="60" fill="#475569" rx="3"/>
+  <circle cx="300" cy="100" r="20" fill="#64748b" stroke="#334155" stroke-width="2"/>
+  <!-- Waveguide -->
+  <rect x="320" y="90" width="50" height="20" fill="#475569"/>
+  <rect x="370" y="85" width="15" height="30" fill="#64748b" rx="2"/>
+  <!-- Scan pattern indicator -->
+  <g stroke="#22c55e" stroke-width="1" fill="none">
+    <path d="M200 100 L120 60"/>
+    <path d="M200 100 L120 80"/>
+    <path d="M200 100 L120 100"/>
+    <path d="M200 100 L120 120"/>
+    <path d="M200 100 L120 140"/>
+  </g>
+  <!-- RF warning -->
+  <g transform="translate(50, 160)">
+    <polygon points="15,0 30,25 0,25" fill="#fbbf24" stroke="#f59e0b" stroke-width="1"/>
+    <text x="15" y="20" text-anchor="middle" fill="#1e293b" font-family="system-ui" font-size="12" font-weight="bold">!</text>
+  </g>
+  <text x="90" y="180" fill="#f59e0b" font-family="system-ui" font-size="8">RF HAZARD</text>
+  <!-- Range indicator -->
+  <text x="340" y="50" fill="#475569" font-family="system-ui" font-size="9">Range: 320nm</text>
+  <text x="340" y="62" fill="#475569" font-family="system-ui" font-size="9">Freq: X-band</text>
+  <text x="200" y="195" text-anchor="middle" fill="#1e3a5f" font-family="system-ui" font-size="12" font-weight="600">Weather Radar Antenna</text>
+</svg>

@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200" fill="none">
+  <defs>
+    <linearGradient id="frameGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#475569"/>
+      <stop offset="50%" style="stop-color:#94a3b8"/>
+      <stop offset="100%" style="stop-color:#475569"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="200" fill="#f0f9ff"/>
+  <!-- Fuselage skin (outer) -->
+  <ellipse cx="200" cy="100" rx="150" ry="80" fill="none" stroke="#cbd5e1" stroke-width="8"/>
+  <!-- Frame (structural ring) -->
+  <ellipse cx="200" cy="100" rx="140" ry="75" fill="none" stroke="url(#frameGrad)" stroke-width="12"/>
+  <!-- Inner flange -->
+  <ellipse cx="200" cy="100" rx="130" ry="68" fill="none" stroke="#64748b" stroke-width="3"/>
+  <!-- Frame cutouts (lightening holes) -->
+  <g fill="#f0f9ff" stroke="#475569" stroke-width="1">
+    <ellipse cx="200" cy="30" rx="20" ry="8"/>
+    <ellipse cx="120" cy="55" rx="18" ry="8" transform="rotate(-30 120 55)"/>
+    <ellipse cx="280" cy="55" rx="18" ry="8" transform="rotate(30 280 55)"/>
+    <ellipse cx="80" cy="100" rx="8" ry="18"/>
+    <ellipse cx="320" cy="100" rx="8" ry="18"/>
+    <ellipse cx="120" cy="145" rx="18" ry="8" transform="rotate(30 120 145)"/>
+    <ellipse cx="280" cy="145" rx="18" ry="8" transform="rotate(-30 280 145)"/>
+  </g>
+  <!-- Stringer attachments -->
+  <g fill="#334155">
+    <circle cx="200" cy="22" r="4"/>
+    <circle cx="150" cy="28" r="4"/>
+    <circle cx="250" cy="28" r="4"/>
+    <circle cx="105" cy="45" r="4"/>
+    <circle cx="295" cy="45" r="4"/>
+    <circle cx="70" cy="75" r="4"/>
+    <circle cx="330" cy="75" r="4"/>
+    <circle cx="60" cy="100" r="4"/>
+    <circle cx="340" cy="100" r="4"/>
+    <circle cx="70" cy="125" r="4"/>
+    <circle cx="330" cy="125" r="4"/>
+    <circle cx="105" cy="155" r="4"/>
+    <circle cx="295" cy="155" r="4"/>
+    <circle cx="150" cy="172" r="4"/>
+    <circle cx="250" cy="172" r="4"/>
+    <circle cx="200" cy="178" r="4"/>
+  </g>
+  <!-- Floor beam attachment -->
+  <rect x="80" y="130" width="240" height="6" fill="#475569"/>
+  <g fill="#334155">
+    <circle cx="100" cy="133" r="3"/>
+    <circle cx="150" cy="133" r="3"/>
+    <circle cx="200" cy="133" r="3"/>
+    <circle cx="250" cy="133" r="3"/>
+    <circle cx="300" cy="133" r="3"/>
+  </g>
+  <!-- Frame station marking -->
+  <text x="200" y="105" text-anchor="middle" fill="#475569" font-family="monospace" font-size="12" font-weight="600">STA 540</text>
+  <!-- Dimension -->
+  <line x1="50" y1="20" x2="50" y2="180" stroke="#94a3b8" stroke-width="1"/>
+  <line x1="45" y1="20" x2="55" y2="20" stroke="#94a3b8" stroke-width="1"/>
+  <line x1="45" y1="180" x2="55" y2="180" stroke="#94a3b8" stroke-width="1"/>
+  <text x="45" y="105" text-anchor="middle" fill="#64748b" font-family="system-ui" font-size="8" transform="rotate(-90 45 105)">148 in</text>
+  <text x="200" y="195" text-anchor="middle" fill="#1e3a5f" font-family="system-ui" font-size="12" font-weight="600">Fuselage Frame Section</text>
+</svg>

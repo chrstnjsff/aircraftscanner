@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200" fill="none">
+  <defs>
+    <linearGradient id="nacelleGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#e2e8f0"/>
+      <stop offset="50%" style="stop-color:#cbd5e1"/>
+      <stop offset="100%" style="stop-color:#94a3b8"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="200" fill="#f0f9ff"/>
+  <!-- Nacelle outer shell -->
+  <path d="M50 100 Q50 45 100 40 L300 35 Q350 40 350 100 Q350 160 300 165 L100 160 Q50 155 50 100" 
+        fill="url(#nacelleGrad)" stroke="#64748b" stroke-width="2"/>
+  <!-- Intake lip -->
+  <ellipse cx="50" cy="100" rx="20" ry="55" fill="none" stroke="#475569" stroke-width="3"/>
+  <!-- Cowl door lines -->
+  <path d="M100 40 L100 160" stroke="#94a3b8" stroke-width="1" stroke-dasharray="5,5"/>
+  <path d="M200 35 L200 165" stroke="#94a3b8" stroke-width="1" stroke-dasharray="5,5"/>
+  <!-- Thrust reverser cascade -->
+  <rect x="240" y="50" width="60" height="20" fill="#475569" rx="2"/>
+  <rect x="240" y="130" width="60" height="20" fill="#475569" rx="2"/>
+  <!-- Acoustic panels indication -->
+  <g fill="#94a3b8">
+    <circle cx="120" cy="70" r="3"/>
+    <circle cx="140" cy="70" r="3"/>
+    <circle cx="160" cy="70" r="3"/>
+    <circle cx="120" cy="130" r="3"/>
+    <circle cx="140" cy="130" r="3"/>
+    <circle cx="160" cy="130" r="3"/>
+  </g>
+  <!-- Exhaust nozzle -->
+  <ellipse cx="350" cy="100" rx="15" ry="45" fill="#64748b" stroke="#475569" stroke-width="2"/>
+  <text x="200" y="185" text-anchor="middle" fill="#1e3a5f" font-family="system-ui" font-size="12" font-weight="600">Engine Nacelle Assembly</text>
+</svg>

@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #213547;
+  background-color: #f8fafc;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-aircraft-blue text-white px-6 py-3 rounded-lg font-semibold 
+           hover:bg-blue-800 transition-colors duration-200 
+           focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2;
+  }
+
+  .btn-secondary {
+    @apply bg-aircraft-orange text-white px-6 py-3 rounded-lg font-semibold 
+           hover:bg-orange-600 transition-colors duration-200
+           focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2;
+  }
+
+  .card {
+    @apply bg-white rounded-xl shadow-lg p-6 transition-shadow duration-200 hover:shadow-xl;
+  }
+
+  .part-image {
+    @apply w-full h-48 object-cover rounded-lg;
+  }
+}

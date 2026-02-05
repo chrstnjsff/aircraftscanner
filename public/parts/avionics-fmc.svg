@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200" fill="none">
+  <defs>
+    <linearGradient id="fmcBody" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#334155"/>
+      <stop offset="100%" style="stop-color:#1e293b"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="200" fill="#f0f9ff"/>
+  <!-- FMC Unit body -->
+  <rect x="80" y="30" width="240" height="130" fill="url(#fmcBody)" stroke="#475569" stroke-width="2" rx="4"/>
+  <!-- Front panel -->
+  <rect x="85" y="35" width="230" height="120" fill="#1e293b" rx="2"/>
+  <!-- Display screen -->
+  <rect x="95" y="45" width="100" height="60" fill="#0f172a" stroke="#334155" stroke-width="1" rx="2"/>
+  <!-- Display content -->
+  <g fill="#22c55e" font-family="monospace" font-size="8">
+    <text x="100" y="58">FLT PLN</text>
+    <text x="100" y="70">KSFO ’ KLAX</text>
+    <text x="100" y="82">ALT 35000</text>
+    <text x="100" y="94">SPD .78M</text>
+  </g>
+  <!-- Line select keys (left) -->
+  <g fill="#475569">
+    <rect x="90" y="48" width="4" height="8" rx="1"/>
+    <rect x="90" y="60" width="4" height="8" rx="1"/>
+    <rect x="90" y="72" width="4" height="8" rx="1"/>
+    <rect x="90" y="84" width="4" height="8" rx="1"/>
+    <rect x="90" y="96" width="4" height="8" rx="1"/>
+  </g>
+  <!-- Line select keys (right) -->
+  <g fill="#475569">
+    <rect x="196" y="48" width="4" height="8" rx="1"/>
+    <rect x="196" y="60" width="4" height="8" rx="1"/>
+    <rect x="196" y="72" width="4" height="8" rx="1"/>
+    <rect x="196" y="84" width="4" height="8" rx="1"/>
+    <rect x="196" y="96" width="4" height="8" rx="1"/>
+  </g>
+  <!-- Keyboard -->
+  <g font-family="system-ui" font-size="6" text-anchor="middle">
+    <!-- Number row -->
+    <g fill="#64748b">
+      <rect x="210" y="45" width="15" height="12" rx="1"/>
+      <rect x="228" y="45" width="15" height="12" rx="1"/>
+      <rect x="246" y="45" width="15" height="12" rx="1"/>
+      <rect x="264" y="45" width="15" height="12" rx="1"/>
+      <rect x="282" y="45" width="15" height="12" rx="1"/>
+    </g>
+    <g fill="#e2e8f0">
+      <text x="217" y="54">1</text>
+      <text x="235" y="54">2</text>
+      <text x="253" y="54">3</text>
+      <text x="271" y="54">4</text>
+      <text x="289" y="54">5</text>
+    </g>
+    <!-- Alpha row 1 -->
+    <g fill="#64748b">
+      <rect x="210" y="60" width="15" height="12" rx="1"/>
+      <rect x="228" y="60" width="15" height="12" rx="1"/>
+      <rect x="246" y="60" width="15" height="12" rx="1"/>
+      <rect x="264" y="60" width="15" height="12" rx="1"/>
+      <rect x="282" y="60" width="15" height="12" rx="1"/>
+    </g>
+    <g fill="#e2e8f0">
+      <text x="217" y="69">A</text>
+      <text x="235" y="69">B</text>
+      <text x="253" y="69">C</text>
+      <text x="271" y="69">D</text>
+      <text x="289" y="69">E</text>
+    </g>
+  </g>
+  <!-- Function keys -->
+  <g fill="#ff6b35">
+    <rect x="95" y="115" width="25" height="12" rx="1"/>
+    <rect x="125" y="115" width="25" height="12" rx="1"/>
+    <rect x="155" y="115" width="25" height="12" rx="1"/>
+  </g>
+  <g fill="white" font-family="system-ui" font-size="5" text-anchor="middle">
+    <text x="107" y="123">INIT</text>
+    <text x="137" y="123">RTE</text>
+    <text x="167" y="123">DEP</text>
+  </g>
+  <!-- Connector (back) -->
+  <rect x="320" y="60" width="25" height="80" fill="#475569" rx="2"/>
+  <g fill="#fbbf24">
+    <rect x="325" y="70" width="3" height="4"/>
+    <rect x="330" y="70" width="3" height="4"/>
+    <rect x="335" y="70" width="3" height="4"/>
+    <rect x="325" y="80" width="3" height="4"/>
+    <rect x="330" y="80" width="3" height="4"/>
+    <rect x="335" y="80" width="3" height="4"/>
+  </g>
+  <!-- Status LEDs -->
+  <circle cx="300" y="120" r="4" fill="#22c55e"/>
+  <circle cx="290" y="120" r="4" fill="#22c55e"/>
+  <text x="200" y="185" text-anchor="middle" fill="#1e3a5f" font-family="system-ui" font-size="12" font-weight="600">Flight Management Computer</text>
+</svg>

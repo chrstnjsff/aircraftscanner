@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200" fill="none">
+  <defs>
+    <linearGradient id="pumpBody" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#64748b"/>
+      <stop offset="100%" style="stop-color:#475569"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="200" fill="#f0f9ff"/>
+  <!-- Pump body -->
+  <rect x="120" y="40" width="160" height="100" fill="url(#pumpBody)" stroke="#334155" stroke-width="2" rx="8"/>
+  <!-- Drive shaft -->
+  <rect x="50" y="80" width="70" height="20" fill="#475569" stroke="#334155" stroke-width="1"/>
+  <circle cx="50" cy="90" r="15" fill="#64748b" stroke="#475569" stroke-width="2"/>
+  <!-- Spline pattern -->
+  <g stroke="#334155" stroke-width="1">
+    <line x1="40" y1="80" x2="40" y2="100"/>
+    <line x1="45" y1="78" x2="45" y2="102"/>
+    <line x1="55" y1="78" x2="55" y2="102"/>
+    <line x1="60" y1="80" x2="60" y2="100"/>
+  </g>
+  <!-- Pressure port -->
+  <rect x="280" y="60" width="60" height="25" fill="#475569" rx="3"/>
+  <circle cx="340" cy="72" r="8" fill="#1e293b"/>
+  <text x="310" y="55" fill="#334155" font-family="system-ui" font-size="8">PRESSURE</text>
+  <text x="345" y="75" fill="#94a3b8" font-family="system-ui" font-size="8">3000 PSI</text>
+  <!-- Suction port -->
+  <rect x="280" y="100" width="50" height="20" fill="#475569" rx="3"/>
+  <circle cx="330" cy="110" r="6" fill="#1e293b"/>
+  <text x="290" y="95" fill="#334155" font-family="system-ui" font-size="8">SUCTION</text>
+  <!-- Case drain -->
+  <rect x="180" y="140" width="40" height="25" fill="#475569" rx="3"/>
+  <circle cx="200" cy="165" r="5" fill="#1e293b"/>
+  <text x="180" y="175" fill="#334155" font-family="system-ui" font-size="7">CASE DRAIN</text>
+  <!-- Compensator -->
+  <circle cx="150" cy="70" r="12" fill="#64748b" stroke="#334155" stroke-width="1"/>
+  <circle cx="150" cy="70" r="6" fill="#ff6b35"/>
+  <!-- Mounting flange -->
+  <g fill="#334155">
+    <circle cx="130" cy="50" r="5"/>
+    <circle cx="270" cy="50" r="5"/>
+    <circle cx="130" cy="130" r="5"/>
+    <circle cx="270" cy="130" r="5"/>
+  </g>
+  <!-- Flow direction arrows -->
+  <path d="M300 72 L320 72 M315 67 L320 72 L315 77" stroke="#22c55e" stroke-width="2" fill="none"/>
+  <path d="M300 110 L280 110 M285 105 L280 110 L285 115" stroke="#3b82f6" stroke-width="2" fill="none"/>
+  <text x="200" y="195" text-anchor="middle" fill="#1e3a5f" font-family="system-ui" font-size="12" font-weight="600">Engine-Driven Hydraulic Pump</text>
+</svg>

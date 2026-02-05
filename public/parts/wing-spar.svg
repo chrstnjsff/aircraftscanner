@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200" fill="none">
+  <defs>
+    <linearGradient id="sparGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#94a3b8"/>
+      <stop offset="50%" style="stop-color:#64748b"/>
+      <stop offset="100%" style="stop-color:#475569"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="200" fill="#f0f9ff"/>
+  <!-- Wing cross section outline -->
+  <path d="M30 100 Q100 40 370 80 L370 120 Q100 160 30 100" fill="#e2e8f0" stroke="#94a3b8" stroke-width="1"/>
+  <!-- Front spar (I-beam cross section) -->
+  <g transform="translate(100, 50)">
+    <!-- Web -->
+    <rect x="10" y="15" width="8" height="70" fill="url(#sparGrad)"/>
+    <!-- Top flange -->
+    <rect x="0" y="10" width="28" height="10" fill="#475569"/>
+    <!-- Bottom flange -->
+    <rect x="0" y="80" width="28" height="10" fill="#475569"/>
+    <!-- Stiffeners -->
+    <rect x="4" y="25" width="20" height="3" fill="#64748b"/>
+    <rect x="4" y="45" width="20" height="3" fill="#64748b"/>
+    <rect x="4" y="65" width="20" height="3" fill="#64748b"/>
+  </g>
+  <!-- Rear spar -->
+  <g transform="translate(280, 60)">
+    <rect x="10" y="10" width="6" height="60" fill="url(#sparGrad)"/>
+    <rect x="2" y="5" width="22" height="8" fill="#475569"/>
+    <rect x="2" y="67" width="22" height="8" fill="#475569"/>
+  </g>
+  <!-- Ribs connecting spars -->
+  <path d="M128 70 L280 75" stroke="#94a3b8" stroke-width="2"/>
+  <path d="M128 100 L280 100" stroke="#94a3b8" stroke-width="2"/>
+  <path d="M128 130 L280 125" stroke="#94a3b8" stroke-width="2"/>
+  <!-- Wing skin indication -->
+  <path d="M60 60 L340 70" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="3,3"/>
+  <path d="M60 140 L340 130" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="3,3"/>
+  <!-- Annotations -->
+  <text x="114" y="175" text-anchor="middle" fill="#475569" font-family="system-ui" font-size="10">Front Spar</text>
+  <text x="291" y="175" text-anchor="middle" fill="#475569" font-family="system-ui" font-size="10">Rear Spar</text>
+  <text x="200" y="185" text-anchor="middle" fill="#1e3a5f" font-family="system-ui" font-size="12" font-weight="600">Main Wing Spar Structure</text>
+</svg>

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200" fill="none">
+  <rect width="400" height="200" fill="#f1f5f9"/>
+  <path d="M200 60L180 90V105L130 130V140L180 135V165L165 180V190L200 180L235 190V180L220 165V135L270 140V130L220 105V90L200 60Z" fill="#cbd5e1"/>
+  <text x="200" y="190" text-anchor="middle" fill="#94a3b8" font-family="system-ui" font-size="12">Part Image</text>
+</svg>

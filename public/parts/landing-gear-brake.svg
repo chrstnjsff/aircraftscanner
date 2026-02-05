@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200" fill="none">
+  <defs>
+    <linearGradient id="carbonGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#374151"/>
+      <stop offset="50%" style="stop-color:#1f2937"/>
+      <stop offset="100%" style="stop-color:#374151"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="200" fill="#f0f9ff"/>
+  <!-- Torque tube (center) -->
+  <rect x="185" y="30" width="30" height="140" fill="#475569" rx="5"/>
+  <!-- Brake housing -->
+  <rect x="100" y="50" width="200" height="100" fill="#64748b" stroke="#475569" stroke-width="2" rx="5"/>
+  <!-- Carbon disc stack -->
+  <g transform="translate(120, 60)">
+    <!-- Stator disc 1 -->
+    <rect x="0" y="0" width="160" height="12" fill="url(#carbonGrad)" rx="2"/>
+    <!-- Rotor disc 1 -->
+    <rect x="10" y="15" width="140" height="10" fill="#1e293b" rx="1"/>
+    <!-- Stator disc 2 -->
+    <rect x="0" y="28" width="160" height="12" fill="url(#carbonGrad)" rx="2"/>
+    <!-- Rotor disc 2 -->
+    <rect x="10" y="43" width="140" height="10" fill="#1e293b" rx="1"/>
+    <!-- Stator disc 3 -->
+    <rect x="0" y="56" width="160" height="12" fill="url(#carbonGrad)" rx="2"/>
+  </g>
+  <!-- Piston housings -->
+  <g fill="#94a3b8">
+    <circle cx="130" cy="75" r="10"/>
+    <circle cx="160" cy="75" r="10"/>
+    <circle cx="240" cy="75" r="10"/>
+    <circle cx="270" cy="75" r="10"/>
+    <circle cx="130" cy="125" r="10"/>
+    <circle cx="160" cy="125" r="10"/>
+    <circle cx="240" cy="125" r="10"/>
+    <circle cx="270" cy="125" r="10"/>
+  </g>
+  <!-- Hydraulic port -->
+  <rect x="305" y="90" width="30" height="20" fill="#475569" rx="3"/>
+  <circle cx="335" cy="100" r="6" fill="#1e293b"/>
+  <!-- Wear indicator -->
+  <line x1="100" y1="160" x2="140" y2="160" stroke="#ff6b35" stroke-width="3"/>
+  <circle cx="120" cy="160" r="4" fill="#ff6b35"/>
+  <text x="145" y="163" fill="#ff6b35" font-family="system-ui" font-size="8">Wear Indicator</text>
+  <!-- Anti-skid valve connection -->
+  <path d="M320 100 L360 100 L360 60 L380 60" stroke="#334155" stroke-width="2" fill="none"/>
+  <text x="360" y="55" fill="#475569" font-family="system-ui" font-size="8">Anti-skid</text>
+  <text x="200" y="190" text-anchor="middle" fill="#1e3a5f" font-family="system-ui" font-size="12" font-weight="600">Carbon Brake Assembly</text>
+</svg>

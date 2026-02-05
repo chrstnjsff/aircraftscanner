@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200" fill="none">
+  <defs>
+    <linearGradient id="aileronSkin" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#e2e8f0"/>
+      <stop offset="50%" style="stop-color:#f8fafc"/>
+      <stop offset="100%" style="stop-color:#cbd5e1"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="200" fill="#f0f9ff"/>
+  <!-- Wing trailing edge -->
+  <path d="M20 80 L150 60 L150 100 L20 110 Z" fill="#94a3b8" stroke="#64748b" stroke-width="2"/>
+  <text x="80" y="88" text-anchor="middle" fill="#475569" font-family="system-ui" font-size="10">WING</text>
+  <!-- Hinge line -->
+  <line x1="150" y1="55" x2="150" y2="145" stroke="#334155" stroke-width="3" stroke-dasharray="8,4"/>
+  <!-- Aileron (neutral position shown, deflected down) -->
+  <path d="M160 65 L380 50 Q390 55 388 70 L175 110 Q155 105 160 65" fill="url(#aileronSkin)" stroke="#64748b" stroke-width="2"/>
+  <!-- Honeycomb core indication -->
+  <g fill="none" stroke="#cbd5e1" stroke-width="0.5">
+    <path d="M180 70 L200 68 L220 66 L240 64"/>
+    <path d="M180 85 L200 83 L220 81 L240 79"/>
+    <path d="M260 62 L280 60 L300 58 L320 56"/>
+    <path d="M260 77 L280 75 L300 73 L320 71"/>
+  </g>
+  <!-- Hinge brackets -->
+  <g fill="#475569">
+    <rect x="145" y="65" width="20" height="12" rx="2"/>
+    <rect x="145" y="90" width="20" height="12" rx="2"/>
+    <rect x="145" y="115" width="20" height="12" rx="2"/>
+  </g>
+  <!-- Hinge pins -->
+  <g fill="#1e293b">
+    <circle cx="155" cy="71" r="4"/>
+    <circle cx="155" cy="96" r="4"/>
+    <circle cx="155" cy="121" r="4"/>
+  </g>
+  <!-- Control rod attachment -->
+  <rect x="220" y="95" width="30" height="15" fill="#64748b" rx="2"/>
+  <circle cx="235" cy="102" r="5" fill="#334155"/>
+  <text x="235" y="125" text-anchor="middle" fill="#475569" font-family="system-ui" font-size="7">ACTUATOR</text>
+  <!-- Balance weight -->
+  <ellipse cx="175" cy="65" rx="10" ry="6" fill="#334155"/>
+  <text x="175" y="55" text-anchor="middle" fill="#475569" font-family="system-ui" font-size="6">BALANCE</text>
+  <!-- Deflection indicator -->
+  <g transform="translate(350, 120)">
+    <line x1="0" y1="0" x2="0" y2="40" stroke="#94a3b8" stroke-width="1"/>
+    <path d="M-15 20 L0 20" stroke="#22c55e" stroke-width="2"/>
+    <path d="M0 0 L15 10" stroke="#ff6b35" stroke-width="2"/>
+    <path d="M0 40 L15 30" stroke="#3b82f6" stroke-width="2"/>
+    <text x="20" y="12" fill="#ff6b35" font-family="system-ui" font-size="7">+25°</text>
+    <text x="20" y="35" fill="#3b82f6" font-family="system-ui" font-size="7">-15°</text>
+  </g>
+  <!-- Gap seal -->
+  <path d="M150 60 Q155 60 160 65" stroke="#475569" stroke-width="1" fill="none"/>
+  <path d="M150 105 Q155 105 165 105" stroke="#475569" stroke-width="1" fill="none"/>
+  <text x="200" y="185" text-anchor="middle" fill="#1e3a5f" font-family="system-ui" font-size="12" font-weight="600">Aileron Assembly</text>
+</svg>
