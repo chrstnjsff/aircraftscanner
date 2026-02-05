@@ -86,12 +86,12 @@ export function GeneratorPage() {
   };
 
   return (
-    <div className="container mx-auto px-4 py-8">
-      <div className="text-center mb-8">
-        <h1 className="text-3xl font-bold text-gray-800 mb-2">
+    <div className="container mx-auto px-4 py-6">
+      <div className="text-center mb-6">
+        <h1 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-2">
           QR Code Generator
         </h1>
-        <p className="text-gray-600">
+        <p className="text-gray-600 text-sm sm:text-base">
           Generate printable QR code labels for aircraft parts
         </p>
       </div>
@@ -163,14 +163,14 @@ export function GeneratorPage() {
           </div>
 
           {/* Label Size Selection */}
-          <div className="bg-white rounded-xl shadow-lg p-6 mb-6">
-            <h2 className="text-xl font-semibold text-gray-800 mb-4">Label Size</h2>
-            <div className="flex gap-4">
+          <div className="bg-white rounded-xl shadow-lg p-4 sm:p-6 mb-6">
+            <h2 className="text-lg sm:text-xl font-semibold text-gray-800 mb-4">Label Size</h2>
+            <div className="flex gap-2 sm:gap-4">
               {(['small', 'medium', 'large'] as const).map(size => (
                 <button
                   key={size}
                   onClick={() => setLabelSize(size)}
-                  className={`px-6 py-3 rounded-lg border-2 capitalize transition-all ${
+                  className={`flex-1 sm:flex-none px-4 sm:px-6 py-2 sm:py-3 rounded-lg border-2 capitalize transition-all text-sm sm:text-base ${
                     labelSize === size
                       ? 'border-aircraft-blue bg-blue-50 text-aircraft-blue'
                       : 'border-gray-200 hover:border-gray-300'
@@ -196,21 +196,21 @@ export function GeneratorPage() {
       ) : (
         <>
           {/* Generated Labels */}
-          <div className="bg-white rounded-xl shadow-lg p-6 mb-6">
-            <div className="flex items-center justify-between mb-6">
-              <h2 className="text-xl font-semibold text-gray-800">
+          <div className="bg-white rounded-xl shadow-lg p-4 sm:p-6 mb-6">
+            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-6">
+              <h2 className="text-lg sm:text-xl font-semibold text-gray-800">
                 Generated Labels ({qrLabels.length})
               </h2>
-              <div className="flex gap-3">
+              <div className="flex flex-col sm:flex-row gap-2 sm:gap-3">
                 <button
                   onClick={() => setQrLabels([])}
-                  className="px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-50"
+                  className="px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-50 text-sm"
                 >
                   Back to Selection
                 </button>
                 <button
                   onClick={() => handlePrint()}
-                  className="btn-primary flex items-center gap-2"
+                  className="btn-primary flex items-center justify-center gap-2 text-sm"
                 >
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z" />
